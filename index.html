@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="bg-dark text-white p-3">
         <div class="container d-flex justify-content-center align-items-center">
@@ -29,7 +31,24 @@
             <img src="photo.png" alt="Umar" class="rounded-circle mb-3" style="width: 150px;">
             <h1>Umar Farooq</h1>
             <p class="lead">Full Stack Developer</p>
-            <a href="Umar_Farooq_Resume.pdf" class="btn btn-primary">Download Resume</a>
+            <a href="Umar_Farooq_Resume.pdf"  class="btn btn-primary mb-3">Download Resume</a><br/>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1AiaXRWXhVD0DbIE_MbPsqqHbS53Hw5n1c188hneUgjemQ1baZWWpv5Eg4IXLwuwPF6-zMjbpR?gv=true',
+                            color: '#039BE5',
+                            label: 'Book an appointment',
+                            target,
+                        });
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
         </div>
     </section>
     <section id="about" class="py-5">
@@ -153,8 +172,8 @@
                     <!-- Add more education details as needed -->
                 </div>
             </div>
-            
-         
+
+
         </div>
     </section>
     <section id="testimonials" class="py-5">
@@ -165,19 +184,24 @@
                     <!-- Repeat this block for each testimonial -->
                     <div class="carousel-item active">
                         <div class="testimonial">
-                            <p>Umar did an incredible job on my eCommerce website. It's beautiful, easy to navigate, and has already boosted my sales. The entire process was smooth, and Umar was professional and attentive to every detail. Highly recommended!</p>
-                            <h6>Zahid Iqbal ,  Fruitistan</h6>
+                            <p>Umar did an incredible job on my eCommerce website. It's beautiful, easy to navigate, and
+                                has already boosted my sales. The entire process was smooth, and Umar was professional
+                                and attentive to every detail. Highly recommended!</p>
+                            <h6>Zahid Iqbal , Fruitistan</h6>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="carousel-item ">
                         <div class="testimonial">
-                           <p>I reached out to Umar when our healthcare app was failing to fetch patient data due to a timezone discrepancy. Umar quickly identified and fixed the issue, ensuring our app ran smoothly again. Their expertise and prompt response were invaluable. Highly recommended!</p>
-                            <h6>Ali Huzaifa ,  Tabib Healthcare</h6>
+                            <p>I reached out to Umar when our healthcare app was failing to fetch patient data due to a
+                                timezone discrepancy. Umar quickly identified and fixed the issue, ensuring our app ran
+                                smoothly again. Their expertise and prompt response were invaluable. Highly recommended!
+                            </p>
+                            <h6>Ali Huzaifa , Tabib Healthcare</h6>
                         </div>
                     </div>
-                    
+
 
                     <!-- End of testimonial block -->
                 </div>
@@ -233,4 +257,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
